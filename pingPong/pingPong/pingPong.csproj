@@ -70,12 +70,6 @@
     <Compile Include="frMenu.Designer.cs">
       <DependentUpon>frMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="TelaDoPong.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TelaDoPong.Designer.cs">
-      <DependentUpon>TelaDoPong.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frLogin.resx">
