@@ -46,11 +46,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="frCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frCadastro.Designer.cs">
+      <DependentUpon>frCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frGame.Designer.cs">
+      <DependentUpon>frGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frLogin.Designer.cs">
+      <DependentUpon>frLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frMenu.Designer.cs">
+      <DependentUpon>frMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="TelaDoPong.cs">
       <SubType>Form</SubType>
@@ -60,6 +78,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frLogin.resx">
+      <DependentUpon>frLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
