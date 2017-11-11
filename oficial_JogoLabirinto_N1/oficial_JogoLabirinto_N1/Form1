@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace oficial_JogoLabirinto_N1
 {
-    public partial class Form1 : Form
+    public partial class frLogin : Form
     {
-        public Form1()
+        public frLogin()
         {
             InitializeComponent();
         }
