@@ -44,6 +44,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -86,7 +87,7 @@
             this.lblPassword.TabIndex = 4;
             this.lblPassword.Text = "Senha:";
             // 
-            // Form1
+            // frLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -97,7 +98,7 @@
             this.Controls.Add(this.lblUser);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "Form1";
+            this.Name = "frLogin";
             this.Text = "frLogin";
             this.ResumeLayout(false);
             this.PerformLayout();

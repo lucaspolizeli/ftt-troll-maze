@@ -10,17 +10,16 @@ using System.Windows.Forms;
 
 namespace pingPong
 {
-    public partial class frLogin : Form
+    public partial class frGameOver : Form
     {
-        public frLogin()
+        public frGameOver()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frGame game = new frGame();
-            game.ShowDialog();
+            this.Close();
         }
     }
 }
