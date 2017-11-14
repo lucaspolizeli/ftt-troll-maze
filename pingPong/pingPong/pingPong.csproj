@@ -78,6 +78,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frCadastro.resx">
+      <DependentUpon>frCadastro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frGame.resx">
       <DependentUpon>frGame.cs</DependentUpon>
     </EmbeddedResource>

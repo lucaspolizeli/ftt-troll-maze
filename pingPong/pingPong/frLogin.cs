@@ -22,5 +22,11 @@ namespace pingPong
             frGame game = new frGame();
             game.ShowDialog();
         }
+
+        private void btCadastro_Click(object sender, EventArgs e)
+        {
+            frCadastro cadastro = new frCadastro();
+            cadastro.ShowDialog();
+        }
     }
 }

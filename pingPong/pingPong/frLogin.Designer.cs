@@ -28,32 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btLogin = new System.Windows.Forms.Button();
+            this.btCadastro = new System.Windows.Forms.Button();
             this.lblUser = new System.Windows.Forms.Label();
             this.txtUser = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // btLogin
             // 
-            this.button1.Location = new System.Drawing.Point(12, 170);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btLogin.Location = new System.Drawing.Point(12, 170);
+            this.btLogin.Name = "btLogin";
+            this.btLogin.Size = new System.Drawing.Size(75, 23);
+            this.btLogin.TabIndex = 0;
+            this.btLogin.Text = "Entrar";
+            this.btLogin.UseVisualStyleBackColor = true;
+            this.btLogin.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btCadastro
             // 
-            this.button2.Location = new System.Drawing.Point(128, 170);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btCadastro.Location = new System.Drawing.Point(128, 170);
+            this.btCadastro.Name = "btCadastro";
+            this.btCadastro.Size = new System.Drawing.Size(75, 23);
+            this.btCadastro.TabIndex = 1;
+            this.btCadastro.Text = "Cadastrar";
+            this.btCadastro.UseVisualStyleBackColor = true;
+            this.btCadastro.Click += new System.EventHandler(this.btCadastro_Click);
             // 
             // lblUser
             // 
@@ -96,8 +97,8 @@
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.txtUser);
             this.Controls.Add(this.lblUser);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btCadastro);
+            this.Controls.Add(this.btLogin);
             this.Name = "frLogin";
             this.Text = "frLogin";
             this.ResumeLayout(false);
@@ -107,8 +108,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btLogin;
+        private System.Windows.Forms.Button btCadastro;
         private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.TextBox txtPassword;
