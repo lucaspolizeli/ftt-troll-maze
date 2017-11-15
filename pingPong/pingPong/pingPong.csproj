@@ -58,12 +58,6 @@
     <Compile Include="MovableCollisionWallV.Designer.cs">
       <DependentUpon>MovableCollisionWallV.cs</DependentUpon>
     </Compile>
-    <Compile Include="frCadastro.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frCadastro.Designer.cs">
-      <DependentUpon>frCadastro.cs</DependentUpon>
-    </Compile>
     <Compile Include="frGame.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,12 +69,6 @@
     </Compile>
     <Compile Include="frGameOver.Designer.cs">
       <DependentUpon>frGameOver.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frLogin.Designer.cs">
-      <DependentUpon>frLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="frMenu.cs">
       <SubType>Form</SubType>
@@ -105,9 +93,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frGameOver.resx">
       <DependentUpon>frGameOver.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frLogin.resx">
-      <DependentUpon>frLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frMenu.resx">
       <DependentUpon>frMenu.cs</DependentUpon>
