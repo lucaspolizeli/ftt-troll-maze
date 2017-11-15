@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CollisionWall.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CollisionWall.Designer.cs">
+      <DependentUpon>CollisionWall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MovableCollisionWallV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MovableCollisionWallV.Designer.cs">
+      <DependentUpon>MovableCollisionWallV.cs</DependentUpon>
+    </Compile>
     <Compile Include="frCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,8 +88,18 @@
     <Compile Include="frMenu.Designer.cs">
       <DependentUpon>frMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Player.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Player.Designer.cs">
+      <DependentUpon>Player.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Time.cs" />
+    <EmbeddedResource Include="MovableCollisionWallV.resx">
+      <DependentUpon>MovableCollisionWallV.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frGame.resx">
       <DependentUpon>frGame.cs</DependentUpon>
     </EmbeddedResource>
@@ -89,6 +111,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frMenu.resx">
       <DependentUpon>frMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Player.resx">
+      <DependentUpon>Player.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

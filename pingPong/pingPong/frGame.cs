@@ -28,7 +28,7 @@ namespace pingPong
 
         private void Player_Click(object sender, EventArgs e)
         {
-            //Cursor.Hide();
+            Cursor.Hide();
             //Cursor.Clip = this.Bounds;
             Cursor.Position = new Point(Cursor.Position.X - 5, Cursor.Position.Y - 5);
             GameRoutine.Start();

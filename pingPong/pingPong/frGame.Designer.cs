@@ -44,6 +44,7 @@
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.collisionWall1 = new pingPong.MovableCollisionWallV();
             ((System.ComponentModel.ISupportInitialize)(this.Player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fallingBlock1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fallingBlock2)).BeginInit();
@@ -192,11 +193,24 @@
             this.pictureBox2.TabIndex = 13;
             this.pictureBox2.TabStop = false;
             // 
+            // collisionWall1
+            // 
+            this.collisionWall1.ActualY = 0;
+            this.collisionWall1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.collisionWall1.Location = new System.Drawing.Point(93, 293);
+            this.collisionWall1.MaxY = 100;
+            this.collisionWall1.MinY = -100;
+            this.collisionWall1.MovingUp = false;
+            this.collisionWall1.Name = "collisionWall1";
+            this.collisionWall1.Size = new System.Drawing.Size(46, 49);
+            this.collisionWall1.TabIndex = 14;
+            // 
             // frGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.collisionWall1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox10);
@@ -248,5 +262,6 @@
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private MovableCollisionWallV collisionWall1;
     }
 }
