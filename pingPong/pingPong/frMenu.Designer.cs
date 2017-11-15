@@ -35,41 +35,50 @@
             // 
             // btJogar
             // 
-            this.btJogar.Location = new System.Drawing.Point(89, 94);
+            this.btJogar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btJogar.Location = new System.Drawing.Point(12, 144);
             this.btJogar.Name = "btJogar";
-            this.btJogar.Size = new System.Drawing.Size(75, 23);
+            this.btJogar.Size = new System.Drawing.Size(175, 23);
             this.btJogar.TabIndex = 0;
-            this.btJogar.Text = "Jogar";
+            this.btJogar.Text = "JOGAR";
             this.btJogar.UseVisualStyleBackColor = true;
+            this.btJogar.Click += new System.EventHandler(this.btJogar_Click);
             // 
             // btRecordes
             // 
-            this.btRecordes.Location = new System.Drawing.Point(89, 123);
+            this.btRecordes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btRecordes.Location = new System.Drawing.Point(12, 173);
             this.btRecordes.Name = "btRecordes";
-            this.btRecordes.Size = new System.Drawing.Size(75, 23);
+            this.btRecordes.Size = new System.Drawing.Size(175, 23);
             this.btRecordes.TabIndex = 1;
-            this.btRecordes.Text = "Recordes";
+            this.btRecordes.Text = "RECORDES";
             this.btRecordes.UseVisualStyleBackColor = true;
+            this.btRecordes.Click += new System.EventHandler(this.btRecordes_Click);
             // 
             // bt
             // 
-            this.bt.Location = new System.Drawing.Point(89, 152);
+            this.bt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt.Location = new System.Drawing.Point(12, 202);
             this.bt.Name = "bt";
-            this.bt.Size = new System.Drawing.Size(75, 23);
+            this.bt.Size = new System.Drawing.Size(175, 23);
             this.bt.TabIndex = 2;
-            this.bt.Text = "Sobre";
+            this.bt.Text = "SOBRE";
             this.bt.UseVisualStyleBackColor = true;
+            this.bt.Click += new System.EventHandler(this.bt_Click);
             // 
             // frMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(195, 271);
             this.Controls.Add(this.bt);
             this.Controls.Add(this.btRecordes);
             this.Controls.Add(this.btJogar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "frMenu";
-            this.Text = "frMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Menu";
             this.ResumeLayout(false);
 
         }

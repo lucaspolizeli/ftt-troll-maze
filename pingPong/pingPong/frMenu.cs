@@ -16,5 +16,23 @@ namespace pingPong
         {
             InitializeComponent();
         }
+
+        private void btJogar_Click(object sender, EventArgs e)
+        {
+            frGame Jogo = new frGame();
+            Jogo.ShowDialog();
+        }
+
+        private void btRecordes_Click(object sender, EventArgs e)
+        {
+            frRecords recordes = new frRecords();
+            recordes.ShowDialog();
+        }
+
+        private void bt_Click(object sender, EventArgs e)
+        {
+            frAbout sobre = new frAbout();
+            sobre.ShowDialog();
+        }
     }
 }

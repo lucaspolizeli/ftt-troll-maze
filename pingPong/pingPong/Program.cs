@@ -17,7 +17,7 @@ namespace pingPong
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Time.Setup();
-            Application.Run(new frLogin());
+            Application.Run(new frMenu());
         }
 
         public static bool IsInDesignMode { get { return Application.ExecutablePath.IndexOf("devenv.exe", StringComparison.OrdinalIgnoreCase) > -1; } }
