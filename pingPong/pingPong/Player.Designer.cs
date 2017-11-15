@@ -35,8 +35,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Red;
+            this.DoubleBuffered = true;
             this.Name = "Player";
             this.Size = new System.Drawing.Size(18, 18);
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Player_MouseClick);
             this.ResumeLayout(false);
 
         }

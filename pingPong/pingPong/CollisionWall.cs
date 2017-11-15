@@ -12,12 +12,14 @@ namespace pingPong
 {
     public partial class CollisionWall : UserControl
     {
-        public static List<CollisionWall> ActiveWalls = new List<CollisionWall>();
+        public static List<UserControl> ActiveWalls = new List<UserControl>();
 
         public CollisionWall()
         {
             InitializeComponent();
-            ActiveWalls.Add(this);
+
+            if (!Program.IsInDesignMode)
+                ActiveWalls.Add(this);
         }
     }
 }

@@ -29,46 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.Player = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.GameRoutine = new System.Windows.Forms.Timer(this.components);
-            this.fallingBlock1 = new System.Windows.Forms.PictureBox();
-            this.fallingBlock2 = new System.Windows.Forms.PictureBox();
-            this.fallingBlock3 = new System.Windows.Forms.PictureBox();
-            this.fallingBlock4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.collisionWall1 = new pingPong.MovableCollisionWallV();
-            ((System.ComponentModel.ISupportInitialize)(this.Player)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fallingBlock1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fallingBlock2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fallingBlock3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fallingBlock4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.collisionWall3 = new pingPong.CollisionWall();
+            this.collisionWall2 = new pingPong.CollisionWall();
+            this.movableCollisionWallV1 = new pingPong.MovableCollisionWallV();
+            this.player1 = new pingPong.Player();
+            this.collisionWall1 = new pingPong.CollisionWall();
+            this.collisionWall4 = new pingPong.CollisionWall();
+            this.collisionWall5 = new pingPong.CollisionWall();
+            this.collisionWall6 = new pingPong.CollisionWall();
+            this.collisionWall7 = new pingPong.CollisionWall();
             this.SuspendLayout();
-            // 
-            // Player
-            // 
-            this.Player.BackColor = System.Drawing.Color.Red;
-            this.Player.Location = new System.Drawing.Point(58, 48);
-            this.Player.Name = "Player";
-            this.Player.Size = new System.Drawing.Size(18, 18);
-            this.Player.TabIndex = 0;
-            this.Player.TabStop = false;
-            this.Player.Click += new System.EventHandler(this.Player_Click);
             // 
             // label1
             // 
@@ -85,183 +57,114 @@
             this.GameRoutine.Interval = 20;
             this.GameRoutine.Tick += new System.EventHandler(this.GameRoutine_Tick);
             // 
-            // fallingBlock1
+            // collisionWall3
             // 
-            this.fallingBlock1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.fallingBlock1.Location = new System.Drawing.Point(547, 158);
-            this.fallingBlock1.Name = "fallingBlock1";
-            this.fallingBlock1.Size = new System.Drawing.Size(18, 54);
-            this.fallingBlock1.TabIndex = 2;
-            this.fallingBlock1.TabStop = false;
+            this.collisionWall3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.collisionWall3.Location = new System.Drawing.Point(27, 111);
+            this.collisionWall3.Name = "collisionWall3";
+            this.collisionWall3.Size = new System.Drawing.Size(150, 10);
+            this.collisionWall3.TabIndex = 18;
             // 
-            // fallingBlock2
+            // collisionWall2
             // 
-            this.fallingBlock2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.fallingBlock2.Location = new System.Drawing.Point(591, 158);
-            this.fallingBlock2.Name = "fallingBlock2";
-            this.fallingBlock2.Size = new System.Drawing.Size(18, 24);
-            this.fallingBlock2.TabIndex = 3;
-            this.fallingBlock2.TabStop = false;
+            this.collisionWall2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.collisionWall2.Location = new System.Drawing.Point(385, 273);
+            this.collisionWall2.Name = "collisionWall2";
+            this.collisionWall2.Size = new System.Drawing.Size(150, 150);
+            this.collisionWall2.TabIndex = 17;
             // 
-            // fallingBlock3
+            // movableCollisionWallV1
             // 
-            this.fallingBlock3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.fallingBlock3.Location = new System.Drawing.Point(634, 158);
-            this.fallingBlock3.Name = "fallingBlock3";
-            this.fallingBlock3.Size = new System.Drawing.Size(18, 54);
-            this.fallingBlock3.TabIndex = 4;
-            this.fallingBlock3.TabStop = false;
+            this.movableCollisionWallV1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.movableCollisionWallV1.Location = new System.Drawing.Point(279, 77);
+            this.movableCollisionWallV1.MaxY = 100;
+            this.movableCollisionWallV1.MinY = -100;
+            this.movableCollisionWallV1.Name = "movableCollisionWallV1";
+            this.movableCollisionWallV1.Size = new System.Drawing.Size(14, 100);
+            this.movableCollisionWallV1.TabIndex = 15;
             // 
-            // fallingBlock4
+            // player1
             // 
-            this.fallingBlock4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.fallingBlock4.Location = new System.Drawing.Point(680, 158);
-            this.fallingBlock4.Name = "fallingBlock4";
-            this.fallingBlock4.Size = new System.Drawing.Size(18, 24);
-            this.fallingBlock4.TabIndex = 5;
-            this.fallingBlock4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox5.Location = new System.Drawing.Point(12, 30);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(119, 12);
-            this.pictureBox5.TabIndex = 6;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox6.Location = new System.Drawing.Point(113, 30);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(18, 36);
-            this.pictureBox6.TabIndex = 7;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox7.Location = new System.Drawing.Point(12, 102);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(247, 19);
-            this.pictureBox7.TabIndex = 8;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox8.Location = new System.Drawing.Point(113, 48);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(187, 18);
-            this.pictureBox8.TabIndex = 9;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox9.Location = new System.Drawing.Point(293, 48);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(17, 111);
-            this.pictureBox9.TabIndex = 10;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox10.Location = new System.Drawing.Point(293, 158);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(405, 24);
-            this.pictureBox10.TabIndex = 11;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox1.Location = new System.Drawing.Point(242, 102);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(17, 129);
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox2.Location = new System.Drawing.Point(242, 210);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(456, 21);
-            this.pictureBox2.TabIndex = 13;
-            this.pictureBox2.TabStop = false;
+            this.player1.BackColor = System.Drawing.Color.Red;
+            this.player1.Location = new System.Drawing.Point(44, 81);
+            this.player1.Name = "player1";
+            this.player1.Size = new System.Drawing.Size(18, 18);
+            this.player1.TabIndex = 14;
             // 
             // collisionWall1
             // 
-            this.collisionWall1.ActualY = 0;
-            this.collisionWall1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.collisionWall1.Location = new System.Drawing.Point(93, 293);
-            this.collisionWall1.MaxY = 100;
-            this.collisionWall1.MinY = -100;
-            this.collisionWall1.MovingUp = false;
+            this.collisionWall1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.collisionWall1.Location = new System.Drawing.Point(27, 61);
             this.collisionWall1.Name = "collisionWall1";
-            this.collisionWall1.Size = new System.Drawing.Size(46, 49);
-            this.collisionWall1.TabIndex = 14;
+            this.collisionWall1.Size = new System.Drawing.Size(207, 10);
+            this.collisionWall1.TabIndex = 19;
+            // 
+            // collisionWall4
+            // 
+            this.collisionWall4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.collisionWall4.Location = new System.Drawing.Point(222, 61);
+            this.collisionWall4.Name = "collisionWall4";
+            this.collisionWall4.Size = new System.Drawing.Size(12, 116);
+            this.collisionWall4.TabIndex = 20;
+            // 
+            // collisionWall5
+            // 
+            this.collisionWall5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.collisionWall5.Location = new System.Drawing.Point(165, 111);
+            this.collisionWall5.Name = "collisionWall5";
+            this.collisionWall5.Size = new System.Drawing.Size(12, 116);
+            this.collisionWall5.TabIndex = 21;
+            // 
+            // collisionWall6
+            // 
+            this.collisionWall6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.collisionWall6.Location = new System.Drawing.Point(165, 217);
+            this.collisionWall6.Name = "collisionWall6";
+            this.collisionWall6.Size = new System.Drawing.Size(207, 10);
+            this.collisionWall6.TabIndex = 22;
+            // 
+            // collisionWall7
+            // 
+            this.collisionWall7.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.collisionWall7.Location = new System.Drawing.Point(222, 167);
+            this.collisionWall7.Name = "collisionWall7";
+            this.collisionWall7.Size = new System.Drawing.Size(207, 10);
+            this.collisionWall7.TabIndex = 23;
             // 
             // frGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.ClientSize = new System.Drawing.Size(1008, 730);
+            this.Controls.Add(this.collisionWall7);
+            this.Controls.Add(this.collisionWall6);
+            this.Controls.Add(this.collisionWall5);
+            this.Controls.Add(this.collisionWall4);
             this.Controls.Add(this.collisionWall1);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox10);
-            this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.fallingBlock4);
-            this.Controls.Add(this.fallingBlock3);
-            this.Controls.Add(this.fallingBlock2);
-            this.Controls.Add(this.fallingBlock1);
+            this.Controls.Add(this.collisionWall3);
+            this.Controls.Add(this.collisionWall2);
+            this.Controls.Add(this.movableCollisionWallV1);
+            this.Controls.Add(this.player1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.Player);
+            this.DoubleBuffered = true;
             this.Name = "frGame";
             this.Text = "frGame";
-            ((System.ComponentModel.ISupportInitialize)(this.Player)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fallingBlock1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fallingBlock2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fallingBlock3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fallingBlock4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox Player;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.Timer GameRoutine;
-        private System.Windows.Forms.PictureBox fallingBlock1;
-        private System.Windows.Forms.PictureBox fallingBlock2;
-        private System.Windows.Forms.PictureBox fallingBlock3;
-        private System.Windows.Forms.PictureBox fallingBlock4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private MovableCollisionWallV collisionWall1;
+        private Player player1;
+        private MovableCollisionWallV movableCollisionWallV1;
+        private CollisionWall collisionWall2;
+        private CollisionWall collisionWall3;
+        private CollisionWall collisionWall1;
+        private CollisionWall collisionWall4;
+        private CollisionWall collisionWall5;
+        private CollisionWall collisionWall6;
+        private CollisionWall collisionWall7;
     }
 }

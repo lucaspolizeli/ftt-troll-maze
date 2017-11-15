@@ -12,15 +12,25 @@ namespace pingPong
 {
     public partial class Player : UserControl
     {
+        bool IsFollowingCursor { get; set; }
+
         public Player()
         {
             InitializeComponent();
-            Time.InternalTimer.Elapsed += InternalTimer_Elapsed;
+            if(!Program.IsInDesignMode) Time.InternalTimer.Tick += InternalTimer_Tick; ;
         }
 
-        private void InternalTimer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+        private void InternalTimer_Tick(object sender, EventArgs e)
         {
-            foreach(CollisionWall wall in CollisionWall.ActiveWalls)
+            foreach (UserControl wall in CollisionWall.ActiveWalls) { if (this.Bounds.IntersectsWith(wall.Bounds)) Console.WriteLine("Se fodeu"); }
+
+            if (IsFollowingCursor)
+                Location = Program.Game.PointToClient(Cursor.Position);
+        }
+
+        private void Player_MouseClick(object sender, MouseEventArgs e)
+        {
+            IsFollowingCursor = true;
         }
     }
 }
