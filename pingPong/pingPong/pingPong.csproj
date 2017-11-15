@@ -46,12 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frCadastro.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frCadastro.Designer.cs">
-      <DependentUpon>frCadastro.cs</DependentUpon>
-    </Compile>
     <Compile Include="frGame.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,12 +58,6 @@
     <Compile Include="frGameOver.Designer.cs">
       <DependentUpon>frGameOver.cs</DependentUpon>
     </Compile>
-    <Compile Include="frLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frLogin.Designer.cs">
-      <DependentUpon>frLogin.cs</DependentUpon>
-    </Compile>
     <Compile Include="frMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,17 +66,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frCadastro.resx">
-      <DependentUpon>frCadastro.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frGame.resx">
       <DependentUpon>frGame.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frGameOver.resx">
       <DependentUpon>frGameOver.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frLogin.resx">
-      <DependentUpon>frLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frMenu.resx">
       <DependentUpon>frMenu.cs</DependentUpon>
