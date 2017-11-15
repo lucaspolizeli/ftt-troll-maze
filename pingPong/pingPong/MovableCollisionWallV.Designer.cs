@@ -30,12 +30,12 @@
         {
             this.SuspendLayout();
             // 
-            // CollisionWall
+            // MovableCollisionWallV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "CollisionWall";
-            this.Size = new System.Drawing.Size(186, 83);
+            this.DoubleBuffered = true;
+            this.Name = "MovableCollisionWallV";
             this.ResumeLayout(false);
 
         }
