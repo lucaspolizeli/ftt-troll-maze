@@ -10,7 +10,6 @@ namespace pingPong
     public static class Time
     {
         public static Timer InternalTimer { get; private set; }
-
         public static void Setup()
         {
             InternalTimer = new Timer();

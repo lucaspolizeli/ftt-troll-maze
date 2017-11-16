@@ -22,10 +22,10 @@ namespace pingPong
 
         private void InternalTimer_Tick(object sender, EventArgs e)
         {
-            foreach (UserControl wall in CollisionWall.ActiveWalls) { if (this.Bounds.IntersectsWith(wall.Bounds)) Console.WriteLine("Se fodeu"); }
+            foreach (UserControl wall in CollisionWall.ActiveWalls) { if (this.Bounds.IntersectsWith(wall.Bounds)) Console.WriteLine(wall.Name); }
 
             if (IsFollowingCursor)
-                Location = Program.Game.PointToClient(Cursor.Position);
+                Location = new Point(Program.Game.PointToClient(Cursor.Position).X-5, Program.Game.PointToClient(Cursor.Position).Y - 5 );
         }
 
         private void Player_MouseClick(object sender, MouseEventArgs e)

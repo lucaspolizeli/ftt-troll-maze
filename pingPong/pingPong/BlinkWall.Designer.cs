@@ -1,6 +1,6 @@
 ﻿namespace pingPong
 {
-    partial class MovableCollisionWallV
+    partial class BlinkWall
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // MovableCollisionWallV
+            // BlinkWall
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.DoubleBuffered = true;
-            this.Name = "MovableCollisionWallV";
+            this.Name = "BlinkWall";
+            this.Size = new System.Drawing.Size(13, 13);
             this.ResumeLayout(false);
 
         }

@@ -17,6 +17,8 @@ namespace pingPong
         private int ActualY { get; set; }
         private bool MovingUp { get; set; }
 
+        public int Speed { get; set; }
+
         public MovableCollisionWallV()
         {
             InitializeComponent();

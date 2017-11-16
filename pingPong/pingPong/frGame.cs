@@ -14,32 +14,34 @@ namespace pingPong
 {
     public partial class frGame : Form
     {
-        public int timeElapsed = 0;
-        public bool change = false;
+        public int timeElapsed;
         public frGame()
         {
             Time.Setup();
+            timeElapsed = 0;
             InitializeComponent();
-        }
-        private void playSimpleSound()
-        {
-            SoundPlayer simpleSound = new SoundPlayer(@"C:\Users\User\Pictures\N2\john-cena-meme-original.wav");
-            simpleSound.Play();
+            Time.InternalTimer.Tick += InternalTimer_Tick;
         }
 
-        private void Player_Click(object sender, EventArgs e)
+        private void InternalTimer_Tick(object sender, EventArgs e)
         {
-            Cursor.Hide();
-            //Cursor.Clip = this.Bounds;
-            Cursor.Position = new Point(Cursor.Position.X - 5, Cursor.Position.Y - 5);
-            GameRoutine.Start();
-
+            timeElapsed += Time.InternalTimer.Interval;
         }
 
-        private void GameRoutine_Tick(object sender, EventArgs e)
+        private void playJohnCena()
         {
-            timeElapsed += 20;
-            change = (timeElapsed % 800 == 0);
+            SoundPlayer johncena = new SoundPlayer(@"C:\Users\User\Pictures\N2\john-cena-meme-original.wav");
+            johncena.Play();
+        }
+        private void playCJ()
+        {
+            SoundPlayer CJ = new SoundPlayer(@"C:\Users\User\Pictures\N2\john-cena-meme-original.wav");
+            CJ.Play();
+        }
+
+        private void pictureBox1_MouseEnter(object sender, EventArgs e)
+        {
+            pictureBox2.Visible = true;
         }
     }
 }
