@@ -24,6 +24,7 @@ namespace pingPong
 
         private void InternalTimer_Tick(object sender, EventArgs e)
         {
+            if (pictureBox3.Bounds.IntersectsWith(player1.Bounds))// YouWin();
             if (mustClose) this.Close();
         }
 
@@ -41,6 +42,11 @@ namespace pingPong
         private void pictureBox1_MouseEnter(object sender, EventArgs e)
         {
             pictureBox2.Visible = true;
+        }
+
+        private void frGame_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

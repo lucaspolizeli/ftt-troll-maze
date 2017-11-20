@@ -42,6 +42,8 @@ namespace pingPong
         private void Player_MouseClick(object sender, MouseEventArgs e)
         {
             IsFollowingCursor = true;
+            Cursor.Hide();
+            Cursor.Clip = FindForm().Bounds;
         }
     }
 }
