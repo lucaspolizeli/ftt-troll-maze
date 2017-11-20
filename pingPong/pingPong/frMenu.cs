@@ -25,14 +25,14 @@ namespace pingPong
 
         private void btRecordes_Click(object sender, EventArgs e)
         {
-            //frRecords recordes = new frRecords();
-            //recordes.ShowDialog();
+            frRecordes recordes = new frRecordes();
+            recordes.ShowDialog();
         }
 
         private void bt_Click(object sender, EventArgs e)
         {
-          //  frAbout sobre = new frAbout();
-           // sobre.ShowDialog();
+            frSobre sobre = new frSobre();
+            sobre.ShowDialog();
         }
     }
 }

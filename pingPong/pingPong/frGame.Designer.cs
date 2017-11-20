@@ -115,8 +115,8 @@
             this.collisionWall65 = new pingPong.CollisionWall();
             this.collisionWall66 = new pingPong.CollisionWall();
             this.collisionWall67 = new pingPong.CollisionWall();
-            this.collisionWall68 = new pingPong.CollisionWall();
             this.collisionWall69 = new pingPong.CollisionWall();
+            this.collisionWall68 = new pingPong.CollisionWall();
             this.collisionWall70 = new pingPong.CollisionWall();
             this.collisionWall71 = new pingPong.CollisionWall();
             this.collisionWall72 = new pingPong.CollisionWall();
@@ -125,14 +125,15 @@
             this.collisionWall75 = new pingPong.CollisionWall();
             this.collisionWall76 = new pingPong.CollisionWall();
             this.collisionWall77 = new pingPong.CollisionWall();
+            this.collisionWall80 = new pingPong.CollisionWall();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.collisionWall78 = new pingPong.CollisionWall();
             this.collisionWall79 = new pingPong.CollisionWall();
-            this.collisionWall80 = new pingPong.CollisionWall();
             this.collisionWall81 = new pingPong.CollisionWall();
             this.collisionWall82 = new pingPong.CollisionWall();
-            this.collisionWall83 = new pingPong.CollisionWall();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -805,7 +806,7 @@
             this.collisionWall62.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.collisionWall62.Location = new System.Drawing.Point(126, 623);
             this.collisionWall62.Name = "collisionWall62";
-            this.collisionWall62.Size = new System.Drawing.Size(334, 10);
+            this.collisionWall62.Size = new System.Drawing.Size(184, 10);
             this.collisionWall62.TabIndex = 90;
             // 
             // collisionWall63
@@ -819,174 +820,174 @@
             // collisionWall64
             // 
             this.collisionWall64.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.collisionWall64.Location = new System.Drawing.Point(450, 442);
+            this.collisionWall64.Location = new System.Drawing.Point(384, 344);
             this.collisionWall64.Name = "collisionWall64";
-            this.collisionWall64.Size = new System.Drawing.Size(10, 191);
+            this.collisionWall64.Size = new System.Drawing.Size(10, 233);
             this.collisionWall64.TabIndex = 92;
             // 
             // collisionWall65
             // 
             this.collisionWall65.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.collisionWall65.Location = new System.Drawing.Point(384, 376);
+            this.collisionWall65.Location = new System.Drawing.Point(307, 623);
             this.collisionWall65.Name = "collisionWall65";
-            this.collisionWall65.Size = new System.Drawing.Size(10, 201);
+            this.collisionWall65.Size = new System.Drawing.Size(170, 10);
             this.collisionWall65.TabIndex = 93;
             // 
             // collisionWall66
             // 
             this.collisionWall66.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.collisionWall66.Location = new System.Drawing.Point(384, 376);
+            this.collisionWall66.Location = new System.Drawing.Point(467, 400);
             this.collisionWall66.Name = "collisionWall66";
-            this.collisionWall66.Size = new System.Drawing.Size(137, 10);
+            this.collisionWall66.Size = new System.Drawing.Size(10, 233);
             this.collisionWall66.TabIndex = 94;
             // 
             // collisionWall67
             // 
             this.collisionWall67.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.collisionWall67.Location = new System.Drawing.Point(519, 376);
+            this.collisionWall67.Location = new System.Drawing.Point(384, 344);
             this.collisionWall67.Name = "collisionWall67";
-            this.collisionWall67.Size = new System.Drawing.Size(10, 191);
+            this.collisionWall67.Size = new System.Drawing.Size(541, 10);
             this.collisionWall67.TabIndex = 95;
-            // 
-            // collisionWall68
-            // 
-            this.collisionWall68.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.collisionWall68.Location = new System.Drawing.Point(450, 442);
-            this.collisionWall68.Name = "collisionWall68";
-            this.collisionWall68.Size = new System.Drawing.Size(25, 10);
-            this.collisionWall68.TabIndex = 96;
             // 
             // collisionWall69
             // 
             this.collisionWall69.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.collisionWall69.Location = new System.Drawing.Point(470, 442);
+            this.collisionWall69.Location = new System.Drawing.Point(467, 399);
             this.collisionWall69.Name = "collisionWall69";
-            this.collisionWall69.Size = new System.Drawing.Size(10, 178);
+            this.collisionWall69.Size = new System.Drawing.Size(388, 10);
             this.collisionWall69.TabIndex = 97;
+            // 
+            // collisionWall68
+            // 
+            this.collisionWall68.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.collisionWall68.Location = new System.Drawing.Point(915, 344);
+            this.collisionWall68.Name = "collisionWall68";
+            this.collisionWall68.Size = new System.Drawing.Size(10, 126);
+            this.collisionWall68.TabIndex = 98;
             // 
             // collisionWall70
             // 
             this.collisionWall70.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.collisionWall70.Location = new System.Drawing.Point(470, 610);
+            this.collisionWall70.Location = new System.Drawing.Point(845, 399);
             this.collisionWall70.Name = "collisionWall70";
-            this.collisionWall70.Size = new System.Drawing.Size(111, 10);
-            this.collisionWall70.TabIndex = 98;
+            this.collisionWall70.Size = new System.Drawing.Size(10, 32);
+            this.collisionWall70.TabIndex = 99;
             // 
             // collisionWall71
             // 
             this.collisionWall71.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.collisionWall71.Location = new System.Drawing.Point(535, 376);
+            this.collisionWall71.Location = new System.Drawing.Point(519, 421);
             this.collisionWall71.Name = "collisionWall71";
-            this.collisionWall71.Size = new System.Drawing.Size(10, 191);
-            this.collisionWall71.TabIndex = 99;
+            this.collisionWall71.Size = new System.Drawing.Size(336, 10);
+            this.collisionWall71.TabIndex = 100;
             // 
             // collisionWall72
             // 
             this.collisionWall72.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.collisionWall72.Location = new System.Drawing.Point(520, 557);
+            this.collisionWall72.Location = new System.Drawing.Point(576, 462);
             this.collisionWall72.Name = "collisionWall72";
-            this.collisionWall72.Size = new System.Drawing.Size(25, 10);
-            this.collisionWall72.TabIndex = 100;
+            this.collisionWall72.Size = new System.Drawing.Size(349, 10);
+            this.collisionWall72.TabIndex = 101;
             // 
             // collisionWall73
             // 
             this.collisionWall73.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.collisionWall73.Location = new System.Drawing.Point(535, 376);
+            this.collisionWall73.Location = new System.Drawing.Point(519, 421);
             this.collisionWall73.Name = "collisionWall73";
-            this.collisionWall73.Size = new System.Drawing.Size(110, 10);
-            this.collisionWall73.TabIndex = 101;
+            this.collisionWall73.Size = new System.Drawing.Size(10, 176);
+            this.collisionWall73.TabIndex = 102;
             // 
             // collisionWall74
             // 
             this.collisionWall74.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.collisionWall74.Location = new System.Drawing.Point(580, 429);
+            this.collisionWall74.Location = new System.Drawing.Point(576, 462);
             this.collisionWall74.Name = "collisionWall74";
-            this.collisionWall74.Size = new System.Drawing.Size(10, 191);
-            this.collisionWall74.TabIndex = 102;
+            this.collisionWall74.Size = new System.Drawing.Size(10, 44);
+            this.collisionWall74.TabIndex = 103;
             // 
             // collisionWall75
             // 
             this.collisionWall75.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.collisionWall75.Location = new System.Drawing.Point(580, 429);
+            this.collisionWall75.Location = new System.Drawing.Point(576, 496);
             this.collisionWall75.Name = "collisionWall75";
-            this.collisionWall75.Size = new System.Drawing.Size(25, 10);
-            this.collisionWall75.TabIndex = 103;
+            this.collisionWall75.Size = new System.Drawing.Size(349, 10);
+            this.collisionWall75.TabIndex = 104;
             // 
             // collisionWall76
             // 
             this.collisionWall76.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.collisionWall76.Location = new System.Drawing.Point(597, 429);
+            this.collisionWall76.Location = new System.Drawing.Point(576, 535);
             this.collisionWall76.Name = "collisionWall76";
-            this.collisionWall76.Size = new System.Drawing.Size(10, 178);
-            this.collisionWall76.TabIndex = 104;
+            this.collisionWall76.Size = new System.Drawing.Size(279, 10);
+            this.collisionWall76.TabIndex = 105;
             // 
             // collisionWall77
             // 
             this.collisionWall77.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.collisionWall77.Location = new System.Drawing.Point(597, 597);
+            this.collisionWall77.Location = new System.Drawing.Point(915, 496);
             this.collisionWall77.Name = "collisionWall77";
-            this.collisionWall77.Size = new System.Drawing.Size(109, 10);
-            this.collisionWall77.TabIndex = 105;
-            // 
-            // collisionWall78
-            // 
-            this.collisionWall78.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.collisionWall78.Location = new System.Drawing.Point(641, 376);
-            this.collisionWall78.Name = "collisionWall78";
-            this.collisionWall78.Size = new System.Drawing.Size(10, 185);
-            this.collisionWall78.TabIndex = 106;
-            // 
-            // collisionWall79
-            // 
-            this.collisionWall79.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.collisionWall79.Location = new System.Drawing.Point(641, 551);
-            this.collisionWall79.Name = "collisionWall79";
-            this.collisionWall79.Size = new System.Drawing.Size(25, 10);
-            this.collisionWall79.TabIndex = 107;
+            this.collisionWall77.Size = new System.Drawing.Size(10, 81);
+            this.collisionWall77.TabIndex = 106;
             // 
             // collisionWall80
             // 
             this.collisionWall80.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.collisionWall80.Location = new System.Drawing.Point(662, 416);
+            this.collisionWall80.Location = new System.Drawing.Point(519, 567);
             this.collisionWall80.Name = "collisionWall80";
-            this.collisionWall80.Size = new System.Drawing.Size(10, 145);
-            this.collisionWall80.TabIndex = 108;
+            this.collisionWall80.Size = new System.Drawing.Size(67, 10);
+            this.collisionWall80.TabIndex = 109;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Location = new System.Drawing.Point(535, 535);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(35, 10);
+            this.pictureBox3.TabIndex = 110;
+            this.pictureBox3.TabStop = false;
+            // 
+            // collisionWall78
+            // 
+            this.collisionWall78.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.collisionWall78.Location = new System.Drawing.Point(519, 593);
+            this.collisionWall78.Name = "collisionWall78";
+            this.collisionWall78.Size = new System.Drawing.Size(369, 10);
+            this.collisionWall78.TabIndex = 111;
+            // 
+            // collisionWall79
+            // 
+            this.collisionWall79.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.collisionWall79.Location = new System.Drawing.Point(609, 567);
+            this.collisionWall79.Name = "collisionWall79";
+            this.collisionWall79.Size = new System.Drawing.Size(316, 10);
+            this.collisionWall79.TabIndex = 112;
             // 
             // collisionWall81
             // 
             this.collisionWall81.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.collisionWall81.Location = new System.Drawing.Point(701, 458);
+            this.collisionWall81.Location = new System.Drawing.Point(915, 567);
             this.collisionWall81.Name = "collisionWall81";
-            this.collisionWall81.Size = new System.Drawing.Size(10, 149);
-            this.collisionWall81.TabIndex = 109;
+            this.collisionWall81.Size = new System.Drawing.Size(10, 107);
+            this.collisionWall81.TabIndex = 113;
             // 
             // collisionWall82
             // 
             this.collisionWall82.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.collisionWall82.Location = new System.Drawing.Point(662, 416);
+            this.collisionWall82.Location = new System.Drawing.Point(878, 593);
             this.collisionWall82.Name = "collisionWall82";
-            this.collisionWall82.Size = new System.Drawing.Size(147, 10);
-            this.collisionWall82.TabIndex = 110;
-            // 
-            // collisionWall83
-            // 
-            this.collisionWall83.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.collisionWall83.Location = new System.Drawing.Point(701, 458);
-            this.collisionWall83.Name = "collisionWall83";
-            this.collisionWall83.Size = new System.Drawing.Size(110, 10);
-            this.collisionWall83.TabIndex = 111;
+            this.collisionWall82.Size = new System.Drawing.Size(10, 81);
+            this.collisionWall82.TabIndex = 114;
             // 
             // frGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 730);
-            this.Controls.Add(this.collisionWall83);
             this.Controls.Add(this.collisionWall82);
             this.Controls.Add(this.collisionWall81);
-            this.Controls.Add(this.collisionWall80);
             this.Controls.Add(this.collisionWall79);
             this.Controls.Add(this.collisionWall78);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.collisionWall80);
             this.Controls.Add(this.collisionWall77);
             this.Controls.Add(this.collisionWall76);
             this.Controls.Add(this.collisionWall75);
@@ -995,8 +996,8 @@
             this.Controls.Add(this.collisionWall72);
             this.Controls.Add(this.collisionWall71);
             this.Controls.Add(this.collisionWall70);
-            this.Controls.Add(this.collisionWall69);
             this.Controls.Add(this.collisionWall68);
+            this.Controls.Add(this.collisionWall69);
             this.Controls.Add(this.collisionWall67);
             this.Controls.Add(this.collisionWall66);
             this.Controls.Add(this.collisionWall65);
@@ -1088,6 +1089,7 @@
             this.Text = "frGame";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1180,8 +1182,8 @@
         private CollisionWall collisionWall65;
         private CollisionWall collisionWall66;
         private CollisionWall collisionWall67;
-        private CollisionWall collisionWall68;
         private CollisionWall collisionWall69;
+        private CollisionWall collisionWall68;
         private CollisionWall collisionWall70;
         private CollisionWall collisionWall71;
         private CollisionWall collisionWall72;
@@ -1190,11 +1192,11 @@
         private CollisionWall collisionWall75;
         private CollisionWall collisionWall76;
         private CollisionWall collisionWall77;
+        private CollisionWall collisionWall80;
+        private System.Windows.Forms.PictureBox pictureBox3;
         private CollisionWall collisionWall78;
         private CollisionWall collisionWall79;
-        private CollisionWall collisionWall80;
         private CollisionWall collisionWall81;
         private CollisionWall collisionWall82;
-        private CollisionWall collisionWall83;
     }
 }
