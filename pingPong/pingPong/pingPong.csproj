@@ -61,6 +61,12 @@
     <Compile Include="CollisionWall.Designer.cs">
       <DependentUpon>CollisionWall.cs</DependentUpon>
     </Compile>
+    <Compile Include="frEndGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frEndGame.Designer.cs">
+      <DependentUpon>frEndGame.cs</DependentUpon>
+    </Compile>
     <Compile Include="frGame.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,9 @@
     <EmbeddedResource Include="CollisionWall.resx">
       <DependentUpon>CollisionWall.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frEndGame.resx">
+      <DependentUpon>frEndGame.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frGame.resx">
       <DependentUpon>frGame.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,6 +129,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frMenu.resx">
       <DependentUpon>frMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frRecordes.resx">
+      <DependentUpon>frRecordes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frSobre.resx">
+      <DependentUpon>frSobre.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MovableCollisionWallV.resx">
       <DependentUpon>MovableCollisionWallV.cs</DependentUpon>

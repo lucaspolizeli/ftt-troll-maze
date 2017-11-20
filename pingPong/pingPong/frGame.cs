@@ -15,6 +15,9 @@ namespace pingPong
     public partial class frGame : Form
     {
         bool mustClose = false;
+        DateTime tempoInicial;
+        public TimeSpan subTimes;
+
         public frGame()
         {
             Time.Setup();
@@ -44,9 +47,20 @@ namespace pingPong
             pictureBox2.Visible = true;
         }
 
-        private void frGame_Load(object sender, EventArgs e)
+        public void frGame_Load(object sender, EventArgs e)
         {
+            
+            tempoInicial = DateTime.Now;
+            
+        }
 
+        public void pictureBox3_MouseEnter(object sender, EventArgs e)
+        {
+            frEndGame end = new frEndGame();
+            DateTime tempoFinal = DateTime.Now;
+            TimeSpan subTimes = tempoFinal.Subtract(tempoInicial);
+            end.ShowDialog();
+            this.Close();
         }
     }
 }

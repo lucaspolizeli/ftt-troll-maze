@@ -9,6 +9,7 @@ namespace pingPong
     static class Program
     {
         public static frGame Game;
+        public static frMenu Menu;
 
         /// <summary>
         /// The main entry point for the application.
@@ -19,7 +20,8 @@ namespace pingPong
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Game = new frGame();
-            Application.Run(Game);
+            Menu = new frMenu();
+            Application.Run(Menu);
         }
 
         public static bool IsInDesignMode { get { return Application.ExecutablePath.IndexOf("devenv.exe", StringComparison.OrdinalIgnoreCase) > -1; } }
