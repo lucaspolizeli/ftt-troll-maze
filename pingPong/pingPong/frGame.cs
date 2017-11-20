@@ -24,7 +24,10 @@ namespace pingPong
 
         private void InternalTimer_Tick(object sender, EventArgs e)
         {
-            if (pictureBox3.Bounds.IntersectsWith(player1.Bounds))// YouWin();
+            if (pictureBox3.Bounds.IntersectsWith(player1.Bounds))
+            {
+                //YouWin();
+            }
             if (mustClose) this.Close();
         }
 
