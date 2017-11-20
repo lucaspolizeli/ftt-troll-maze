@@ -79,6 +79,18 @@
     <Compile Include="frMenu.Designer.cs">
       <DependentUpon>frMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="frRecordes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frRecordes.Designer.cs">
+      <DependentUpon>frRecordes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frSobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frSobre.Designer.cs">
+      <DependentUpon>frSobre.cs</DependentUpon>
+    </Compile>
     <Compile Include="MovableCollisionWallV.cs">
       <SubType>UserControl</SubType>
     </Compile>

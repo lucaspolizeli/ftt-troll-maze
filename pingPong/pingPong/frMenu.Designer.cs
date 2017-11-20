@@ -36,7 +36,7 @@
             // btJogar
             // 
             this.btJogar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btJogar.Location = new System.Drawing.Point(12, 144);
+            this.btJogar.Location = new System.Drawing.Point(12, 168);
             this.btJogar.Name = "btJogar";
             this.btJogar.Size = new System.Drawing.Size(175, 23);
             this.btJogar.TabIndex = 0;
@@ -47,7 +47,7 @@
             // btRecordes
             // 
             this.btRecordes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btRecordes.Location = new System.Drawing.Point(12, 173);
+            this.btRecordes.Location = new System.Drawing.Point(12, 197);
             this.btRecordes.Name = "btRecordes";
             this.btRecordes.Size = new System.Drawing.Size(175, 23);
             this.btRecordes.TabIndex = 1;
@@ -58,7 +58,7 @@
             // bt
             // 
             this.bt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt.Location = new System.Drawing.Point(12, 202);
+            this.bt.Location = new System.Drawing.Point(12, 226);
             this.bt.Name = "bt";
             this.bt.Size = new System.Drawing.Size(175, 23);
             this.bt.TabIndex = 2;
