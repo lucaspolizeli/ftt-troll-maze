@@ -10,11 +10,15 @@ namespace pingPong
     public static class Time
     {
         public static Timer InternalTimer { get; private set; }
+        public static Timer BlinkTimer { get; private set; }
         public static void Setup()
         {
             InternalTimer = new Timer();
             InternalTimer.Interval = 1;
             InternalTimer.Start();
+            BlinkTimer = new Timer();
+            BlinkTimer.Interval = 1500;
+            BlinkTimer.Start();
         }
     }
 }

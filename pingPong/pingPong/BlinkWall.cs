@@ -17,18 +17,14 @@ namespace pingPong
             InitializeComponent();
             if (!Program.IsInDesignMode)
             {
-                Time.InternalTimer.Tick += InternalTimer_Tick;
+                Time.BlinkTimer.Tick += BlinkTimer_Tick;
                 CollisionWall.ActiveWalls.Add(this);
             }
         }
 
-        private void InternalTimer_Tick(object sender, EventArgs e)
+        private void BlinkTimer_Tick(object sender, EventArgs e)
         {
-               /* if (frGame.timeElapsed % 1000 == 0)
-                {
-
-                }
-                */
+            if (Enabled == true) { Enabled = false; Visible = false; } else { Enabled = true; Visible = true; }
         }
     }
 }

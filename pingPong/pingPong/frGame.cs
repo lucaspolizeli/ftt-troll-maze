@@ -14,28 +14,27 @@ namespace pingPong
 {
     public partial class frGame : Form
     {
-        public int timeElapsed;
+        bool mustClose = false;
         public frGame()
         {
             Time.Setup();
-            timeElapsed = 0;
             InitializeComponent();
             Time.InternalTimer.Tick += InternalTimer_Tick;
         }
 
         private void InternalTimer_Tick(object sender, EventArgs e)
         {
-            timeElapsed += Time.InternalTimer.Interval;
+            if (mustClose) this.Close();
         }
 
-        private void playJohnCena()
+        public static void playJohnCena()
         {
-            SoundPlayer johncena = new SoundPlayer(@"C:\Users\User\Pictures\N2\john-cena-meme-original.wav");
+            SoundPlayer johncena = new SoundPlayer(@"\src\john-cena-meme-original.wav");
             johncena.Play();
         }
         private void playCJ()
         {
-            SoundPlayer CJ = new SoundPlayer(@"C:\Users\User\Pictures\N2\john-cena-meme-original.wav");
+            SoundPlayer CJ = new SoundPlayer(@"\src\john-cena-meme-original.wav");
             CJ.Play();
         }
 
