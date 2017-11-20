@@ -61,6 +61,7 @@ namespace pingPong
             TimeSpan subTimes = tempoFinal.Subtract(tempoInicial);
             end.ShowDialog();
             this.Close();
+            //asdjkasldjaslasjldk
         }
     }
 }
