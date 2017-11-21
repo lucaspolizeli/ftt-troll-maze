@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frGame));
             this.pbYouWin = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pbCJbolado = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.collisionWall87 = new pingPong.CollisionWall();
             this.collisionWall86 = new pingPong.CollisionWall();
@@ -137,7 +137,7 @@
             this.collisionWall1 = new pingPong.CollisionWall();
             this.collisionWall7 = new pingPong.CollisionWall();
             ((System.ComponentModel.ISupportInitialize)(this.pbYouWin)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCJbolado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -151,22 +151,22 @@
             this.pbYouWin.TabIndex = 122;
             this.pbYouWin.TabStop = false;
             // 
-            // pictureBox2
+            // pbCJbolado
             // 
-            this.pictureBox2.Image = global::pingPong.Properties.Resources.images;
-            this.pictureBox2.Location = new System.Drawing.Point(761, 17);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(174, 115);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 19;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Visible = false;
+            this.pbCJbolado.Image = global::pingPong.Properties.Resources.images;
+            this.pbCJbolado.Location = new System.Drawing.Point(761, 17);
+            this.pbCJbolado.Name = "pbCJbolado";
+            this.pbCJbolado.Size = new System.Drawing.Size(174, 115);
+            this.pbCJbolado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbCJbolado.TabIndex = 19;
+            this.pbCJbolado.TabStop = false;
+            this.pbCJbolado.Visible = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(819, 154);
+            this.pictureBox1.Location = new System.Drawing.Point(819, 138);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(10, 22);
+            this.pictureBox1.Size = new System.Drawing.Size(10, 55);
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.MouseEnter += new System.EventHandler(this.pictureBox1_MouseEnter);
@@ -174,7 +174,7 @@
             // collisionWall87
             // 
             this.collisionWall87.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.collisionWall87.Location = new System.Drawing.Point(2, 27);
+            this.collisionWall87.Location = new System.Drawing.Point(107, 31);
             this.collisionWall87.Name = "collisionWall87";
             this.collisionWall87.Size = new System.Drawing.Size(10, 69);
             this.collisionWall87.TabIndex = 121;
@@ -1119,7 +1119,7 @@
             this.Controls.Add(this.collisionWall15);
             this.Controls.Add(this.collisionWall14);
             this.Controls.Add(this.collisionWall13);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pbCJbolado);
             this.Controls.Add(this.collisionWall12);
             this.Controls.Add(this.collisionWall11);
             this.Controls.Add(this.collisionWall10);
@@ -1143,7 +1143,7 @@
             this.Text = "frGame";
             this.Load += new System.EventHandler(this.frGame_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbYouWin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCJbolado)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -1168,7 +1168,7 @@
         private CollisionWall collisionWall11;
         private CollisionWall collisionWall12;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pbCJbolado;
         private CollisionWall collisionWall13;
         private CollisionWall collisionWall14;
         private CollisionWall collisionWall15;

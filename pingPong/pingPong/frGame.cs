@@ -29,6 +29,8 @@ namespace pingPong
         {
             if (pbYouWin.Bounds.IntersectsWith(player1.Bounds))
             {
+                Cursor.Show();
+                Time.InternalTimer.Stop(); Time.BlinkTimer.Stop();
                 frEndGame end = new frEndGame();
                 DateTime tempoFinal = DateTime.Now;
                 subTimes = tempoFinal.Subtract(tempoInicial);
@@ -51,7 +53,7 @@ namespace pingPong
 
         private void pictureBox1_MouseEnter(object sender, EventArgs e)
         {
-            pictureBox2.Visible = true;
+            pbCJbolado.Visible = true;
         }
 
         public void frGame_Load(object sender, EventArgs e)
