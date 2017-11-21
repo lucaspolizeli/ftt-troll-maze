@@ -168,6 +168,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="maxresdefault.jpg" />
+    <None Include="Resources\maxresdefault1.jpg" />
     <None Include="Resources\images.jpg" />
     <None Include="Resources\maxresdefault.jpg" />
   </ItemGroup>

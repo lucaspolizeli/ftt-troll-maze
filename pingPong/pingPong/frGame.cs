@@ -33,7 +33,6 @@ namespace pingPong
                 DateTime tempoFinal = DateTime.Now;
                 subTimes = tempoFinal.Subtract(tempoInicial);
                 end.ShowDialog();
-                MessageBox.Show(subTimes.ToString());
                 this.Close();
             }
             if (mustClose) this.Close();

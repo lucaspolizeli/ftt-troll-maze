@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frGame));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pbYouWin = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.collisionWall87 = new pingPong.CollisionWall();
             this.collisionWall86 = new pingPong.CollisionWall();
             this.collisionWall81 = new pingPong.CollisionWall();
@@ -136,19 +136,20 @@
             this.collisionWall2 = new pingPong.CollisionWall();
             this.collisionWall1 = new pingPong.CollisionWall();
             this.collisionWall7 = new pingPong.CollisionWall();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbYouWin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // pbYouWin
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(819, 154);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(10, 22);
-            this.pictureBox1.TabIndex = 18;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.MouseEnter += new System.EventHandler(this.pictureBox1_MouseEnter);
+            this.pbYouWin.Image = ((System.Drawing.Image)(resources.GetObject("pbYouWin.Image")));
+            this.pbYouWin.Location = new System.Drawing.Point(757, 668);
+            this.pbYouWin.Name = "pbYouWin";
+            this.pbYouWin.Size = new System.Drawing.Size(62, 50);
+            this.pbYouWin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbYouWin.TabIndex = 122;
+            this.pbYouWin.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -161,15 +162,14 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Visible = false;
             // 
-            // pbYouWin
+            // pictureBox1
             // 
-            this.pbYouWin.Image = ((System.Drawing.Image)(resources.GetObject("pbYouWin.Image")));
-            this.pbYouWin.Location = new System.Drawing.Point(757, 668);
-            this.pbYouWin.Name = "pbYouWin";
-            this.pbYouWin.Size = new System.Drawing.Size(62, 50);
-            this.pbYouWin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbYouWin.TabIndex = 122;
-            this.pbYouWin.TabStop = false;
+            this.pictureBox1.Location = new System.Drawing.Point(819, 154);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(10, 22);
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseEnter += new System.EventHandler(this.pictureBox1_MouseEnter);
             // 
             // collisionWall87
             // 
@@ -1139,11 +1139,12 @@
             this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
             this.Name = "frGame";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frGame";
             this.Load += new System.EventHandler(this.frGame_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbYouWin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
