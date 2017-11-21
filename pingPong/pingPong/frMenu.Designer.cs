@@ -31,12 +31,13 @@
             this.btJogar = new System.Windows.Forms.Button();
             this.btRecordes = new System.Windows.Forms.Button();
             this.bt = new System.Windows.Forms.Button();
+            this.btHowTo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btJogar
             // 
             this.btJogar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btJogar.Location = new System.Drawing.Point(12, 168);
+            this.btJogar.Location = new System.Drawing.Point(9, 193);
             this.btJogar.Name = "btJogar";
             this.btJogar.Size = new System.Drawing.Size(175, 23);
             this.btJogar.TabIndex = 0;
@@ -47,7 +48,7 @@
             // btRecordes
             // 
             this.btRecordes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btRecordes.Location = new System.Drawing.Point(12, 197);
+            this.btRecordes.Location = new System.Drawing.Point(9, 222);
             this.btRecordes.Name = "btRecordes";
             this.btRecordes.Size = new System.Drawing.Size(175, 23);
             this.btRecordes.TabIndex = 1;
@@ -58,7 +59,7 @@
             // bt
             // 
             this.bt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt.Location = new System.Drawing.Point(12, 226);
+            this.bt.Location = new System.Drawing.Point(9, 251);
             this.bt.Name = "bt";
             this.bt.Size = new System.Drawing.Size(175, 23);
             this.bt.TabIndex = 2;
@@ -66,11 +67,23 @@
             this.bt.UseVisualStyleBackColor = true;
             this.bt.Click += new System.EventHandler(this.bt_Click);
             // 
+            // btHowTo
+            // 
+            this.btHowTo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btHowTo.Location = new System.Drawing.Point(9, 164);
+            this.btHowTo.Name = "btHowTo";
+            this.btHowTo.Size = new System.Drawing.Size(175, 23);
+            this.btHowTo.TabIndex = 3;
+            this.btHowTo.Text = "COMO JOGAR";
+            this.btHowTo.UseVisualStyleBackColor = true;
+            this.btHowTo.Click += new System.EventHandler(this.btHowTo_Click);
+            // 
             // frMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(195, 271);
+            this.ClientSize = new System.Drawing.Size(195, 286);
+            this.Controls.Add(this.btHowTo);
             this.Controls.Add(this.bt);
             this.Controls.Add(this.btRecordes);
             this.Controls.Add(this.btJogar);
@@ -88,5 +101,6 @@
         private System.Windows.Forms.Button btJogar;
         private System.Windows.Forms.Button btRecordes;
         private System.Windows.Forms.Button bt;
+        private System.Windows.Forms.Button btHowTo;
     }
 }

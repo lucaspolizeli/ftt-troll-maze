@@ -34,5 +34,11 @@ namespace pingPong
             frSobre sobre = new frSobre();
             sobre.ShowDialog();
         }
+
+        private void btHowTo_Click(object sender, EventArgs e)
+        {
+            var howto = new frComoJogar();
+            howto.ShowDialog();
+        }
     }
 }
