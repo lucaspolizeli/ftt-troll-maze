@@ -61,10 +61,10 @@ namespace pingPong
         {
             frEndGame end = new frEndGame();
             DateTime tempoFinal = DateTime.Now;
-            TimeSpan subTimes = tempoFinal.Subtract(tempoInicial);
+            subTimes = tempoFinal.Subtract(tempoInicial);
             end.ShowDialog();
             this.Close();
-            //asdjkasldjaslasjldk
+            
         }
     }
 }
