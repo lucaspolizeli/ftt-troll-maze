@@ -27,9 +27,14 @@ namespace pingPong
 
         private void InternalTimer_Tick(object sender, EventArgs e)
         {
-            if (pictureBox3.Bounds.IntersectsWith(player1.Bounds))
+            if (pbYouWin.Bounds.IntersectsWith(player1.Bounds))
             {
-                //YouWin();
+                frEndGame end = new frEndGame();
+                DateTime tempoFinal = DateTime.Now;
+                subTimes = tempoFinal.Subtract(tempoInicial);
+                end.ShowDialog();
+                MessageBox.Show(subTimes.ToString());
+                this.Close();
             }
             if (mustClose) this.Close();
         }
@@ -54,16 +59,6 @@ namespace pingPong
         {
             
             tempoInicial = DateTime.Now;
-            
-        }
-
-        public void pictureBox3_MouseEnter(object sender, EventArgs e)
-        {
-            frEndGame end = new frEndGame();
-            DateTime tempoFinal = DateTime.Now;
-            subTimes = tempoFinal.Subtract(tempoInicial);
-            end.ShowDialog();
-            this.Close();
             
         }
     }

@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frGame));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pbYouWin = new System.Windows.Forms.PictureBox();
             this.collisionWall87 = new pingPong.CollisionWall();
             this.collisionWall86 = new pingPong.CollisionWall();
             this.collisionWall81 = new pingPong.CollisionWall();
@@ -138,7 +138,7 @@
             this.collisionWall7 = new pingPong.CollisionWall();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbYouWin)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -152,7 +152,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Image = global::pingPong.Properties.Resources.images;
             this.pictureBox2.Location = new System.Drawing.Point(761, 17);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(174, 115);
@@ -161,16 +161,15 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Visible = false;
             // 
-            // pictureBox3
+            // pbYouWin
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(757, 668);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(62, 50);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 122;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.MouseEnter += new System.EventHandler(this.pictureBox3_MouseEnter);
+            this.pbYouWin.Image = ((System.Drawing.Image)(resources.GetObject("pbYouWin.Image")));
+            this.pbYouWin.Location = new System.Drawing.Point(757, 668);
+            this.pbYouWin.Name = "pbYouWin";
+            this.pbYouWin.Size = new System.Drawing.Size(62, 50);
+            this.pbYouWin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbYouWin.TabIndex = 122;
+            this.pbYouWin.TabStop = false;
             // 
             // collisionWall87
             // 
@@ -1031,7 +1030,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1008, 730);
-            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pbYouWin);
             this.Controls.Add(this.collisionWall87);
             this.Controls.Add(this.collisionWall86);
             this.Controls.Add(this.collisionWall81);
@@ -1144,7 +1143,7 @@
             this.Load += new System.EventHandler(this.frGame_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbYouWin)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1257,6 +1256,6 @@
         private CollisionWall collisionWall81;
         private CollisionWall collisionWall86;
         private CollisionWall collisionWall87;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pbYouWin;
     }
 }
