@@ -40,6 +40,7 @@ namespace pingPong
                     johncena.Stop();
                     FindForm().Close();
                     Console.WriteLine(wall.Name);
+                    break;
                 }
             }
             if (IsFollowingCursor)
