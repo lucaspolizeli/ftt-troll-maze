@@ -36,10 +36,11 @@
             // lblDev
             // 
             this.lblDev.AutoSize = true;
-            this.lblDev.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDev.Location = new System.Drawing.Point(16, 9);
+            this.lblDev.Font = new System.Drawing.Font("Snap ITC", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDev.ForeColor = System.Drawing.Color.Navy;
+            this.lblDev.Location = new System.Drawing.Point(15, 9);
             this.lblDev.Name = "lblDev";
-            this.lblDev.Size = new System.Drawing.Size(256, 33);
+            this.lblDev.Size = new System.Drawing.Size(302, 37);
             this.lblDev.TabIndex = 0;
             this.lblDev.Text = "Desenvolvedores";
             // 
@@ -65,7 +66,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 113);
+            this.ClientSize = new System.Drawing.Size(327, 113);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblDev);

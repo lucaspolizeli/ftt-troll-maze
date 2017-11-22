@@ -1140,7 +1140,7 @@
             this.DoubleBuffered = true;
             this.Name = "frGame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frGame";
+            this.Text = "Jogo";
             this.Load += new System.EventHandler(this.frGame_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbYouWin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCJbolado)).EndInit();

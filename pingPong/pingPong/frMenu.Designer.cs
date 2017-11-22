@@ -32,6 +32,9 @@
             this.btRecordes = new System.Windows.Forms.Button();
             this.bt = new System.Windows.Forms.Button();
             this.btHowTo = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btJogar
@@ -78,11 +81,34 @@
             this.btHowTo.UseVisualStyleBackColor = true;
             this.btHowTo.Click += new System.EventHandler(this.btHowTo_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::pingPong.Properties.Resources.maxresdefault;
+            this.pictureBox1.Location = new System.Drawing.Point(9, 49);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(175, 109);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Snap ITC", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Navy;
+            this.label1.Location = new System.Drawing.Point(7, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(177, 31);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "LABIRINTO";
+            // 
             // frMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(195, 286);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btHowTo);
             this.Controls.Add(this.bt);
             this.Controls.Add(this.btRecordes);
@@ -92,7 +118,9 @@
             this.Name = "frMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -102,5 +130,7 @@
         private System.Windows.Forms.Button btRecordes;
         private System.Windows.Forms.Button bt;
         private System.Windows.Forms.Button btHowTo;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
