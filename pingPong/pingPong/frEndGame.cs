@@ -30,8 +30,6 @@ namespace pingPong
             string conteudo = txtNomePlayerWin.Text + "|" + frGame.subTimes.ToString(@"hh\:mm\:ss") + Environment.NewLine;
             File.AppendAllText("recordes.txt", conteudo);
             this.Close();
-
-
         }
     }
 }
