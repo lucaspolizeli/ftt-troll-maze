@@ -27,9 +27,13 @@ namespace pingPong
                 return;
             }
 
-            string conteudo = txtNomePlayerWin.Text + "|" + frGame.subTimes.ToString(@"hh\:mm\:ss") + Environment.NewLine;
-            File.AppendAllText("recordes.txt", conteudo);
-            this.Close();
+            if (File.Exists("recordes.txt"))
+            {
+                string conteudo = txtNomePlayerWin.Text + "|" + frGame.subTimes.ToString(@"hh\:mm\:ss") + Environment.NewLine;
+                File.AppendAllText("recordes.txt", conteudo);
+                this.Close();
+            }
+            
         }
     }
 }
