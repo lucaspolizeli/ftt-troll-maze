@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frRecordes));
             this.lboxRecordes = new System.Windows.Forms.ListBox();
             this.lblTituloGamerds = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -58,6 +59,7 @@
             this.Controls.Add(this.lblTituloGamerds);
             this.Controls.Add(this.lboxRecordes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frRecordes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

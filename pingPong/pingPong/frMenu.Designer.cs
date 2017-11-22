@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frMenu));
             this.btJogar = new System.Windows.Forms.Button();
             this.btRecordes = new System.Windows.Forms.Button();
             this.bt = new System.Windows.Forms.Button();
@@ -88,6 +89,7 @@
             this.Controls.Add(this.btRecordes);
             this.Controls.Add(this.btJogar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

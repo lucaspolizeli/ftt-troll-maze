@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frEndGame));
             this.label1 = new System.Windows.Forms.Label();
             this.btEnviar = new System.Windows.Forms.Button();
             this.txtNomePlayerWin = new System.Windows.Forms.TextBox();
@@ -79,8 +80,9 @@
             this.Controls.Add(this.txtNomePlayerWin);
             this.Controls.Add(this.btEnviar);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frEndGame";
-            this.Text = "frEndGame";
+            this.Text = "Vitória ";
             this.ResumeLayout(false);
             this.PerformLayout();
 
