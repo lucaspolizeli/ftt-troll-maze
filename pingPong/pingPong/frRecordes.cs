@@ -27,18 +27,24 @@ namespace pingPong
         {
             List<Pontuacao> recordes = new List<Pontuacao>();
             List<Pontuacao> recordesOrdenados = new List<Pontuacao>();
-            string[] conteudo = File.ReadAllLines("recordes.txt");
+            string[] conteudo;
             Pontuacao pont;
-            for (int i = 0; i < conteudo.Length; i++)
+            if (File.Exists("recordes.txt"))
             {
-                pont = new Pontuacao();
-                string[] dados = conteudo[i].Split('|');
-                pont.Nome = dados[0]; pont.Tempo =  dados[1];
-                recordes.Add(pont);
+                lboxRecordes.Items.Clear();
+                conteudo = File.ReadAllLines("recordes.txt");
+                for (int i = 0; i < conteudo.Length; i++)
+                {
+                    pont = new Pontuacao();
+                    string[] dados = conteudo[i].Split('|');
+                    pont.Nome = dados[0]; pont.Tempo = dados[1];
+                    recordes.Add(pont);
+                }
+                recordesOrdenados = recordes.OrderBy(Pontuacao => Pontuacao.Tempo).ToList();
+                // To pensando em limitar esse foreach, fazer virar um for que mostre só tipo, os 10 primeiros registros, é só trocar o foreach por um for que vai até 10
+                foreach (Pontuacao p in recordesOrdenados) lboxRecordes.Items.Add(p.Nome + "  -------  " + p.Tempo);
             }
-            recordesOrdenados = recordes.OrderBy(Pontuacao => Pontuacao.Tempo).ToList();
-            // To pensando em limitar esse foreach, fazer virar um for que mostre só tipo, os 10 primeiros registros, é só trocar o foreach por um for que vai até 10
-            foreach(Pontuacao p in recordesOrdenados) lboxRecordes.Items.Add(p.Nome +"  -------  "+ p.Tempo);
+            else lboxRecordes.Items.Add("Até agora ninguém ganhou :)");
         }
     }
 }
