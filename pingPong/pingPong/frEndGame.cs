@@ -21,7 +21,7 @@ namespace pingPong
         private void btEnviar_Click(object sender, EventArgs e)
         {
             string conteudo = txtNomePlayerWin.Text + " || " + frGame.subTimes.ToString(@"hh\:mm\:ss") + Environment.NewLine;
-            File.WriteAllText("recordes.txt", conteudo);
+            File.AppendAllText("recordes.txt", conteudo);
             this.Close();
         }
     }
