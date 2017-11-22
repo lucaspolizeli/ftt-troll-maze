@@ -173,7 +173,7 @@
             // collisionWall87
             // 
             this.collisionWall87.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.collisionWall87.Location = new System.Drawing.Point(65, 27);
+            this.collisionWall87.Location = new System.Drawing.Point(12, 27);
             this.collisionWall87.Name = "collisionWall87";
             this.collisionWall87.Size = new System.Drawing.Size(10, 69);
             this.collisionWall87.TabIndex = 121;
@@ -1003,7 +1003,7 @@
             // collisionWall2
             // 
             this.collisionWall2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.collisionWall2.Location = new System.Drawing.Point(54, 86);
+            this.collisionWall2.Location = new System.Drawing.Point(12, 86);
             this.collisionWall2.Name = "collisionWall2";
             this.collisionWall2.Size = new System.Drawing.Size(140, 10);
             this.collisionWall2.TabIndex = 1;
