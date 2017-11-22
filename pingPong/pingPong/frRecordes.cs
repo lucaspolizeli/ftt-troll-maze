@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace pingPong
 {
@@ -15,6 +16,15 @@ namespace pingPong
         public frRecordes()
         {
             InitializeComponent();
+        }
+
+        private void frRecordes_Load(object sender, EventArgs e)
+        {
+            string[] conteudo = File.ReadAllLines("recordes.txt");
+            for (int i = 0; i < conteudo.Length; i++)
+            {
+                lboxRecordes.Items.Add(conteudo[i]);
+            }
         }
     }
 }

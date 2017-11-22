@@ -13,7 +13,7 @@ namespace pingPong
     public partial class Player : UserControl
     {
         bool IsFollowingCursor { get; set; }
-        bool clicked { get; set; }
+        public bool Clicked { get; set; }
 
         public Player()
         {
@@ -44,12 +44,12 @@ namespace pingPong
 
         private void Player_MouseClick(object sender, MouseEventArgs e)
         {
-            if(clicked == false)
+            if(Clicked == false)
             {
                 IsFollowingCursor = true;
                 Cursor.Hide();
                 Cursor.Clip = FindForm().Bounds;
-                clicked = true;
+                Clicked = true;
             }
 
         }

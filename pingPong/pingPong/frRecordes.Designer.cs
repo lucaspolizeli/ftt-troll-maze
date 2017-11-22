@@ -62,6 +62,7 @@
             this.Name = "frRecordes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Recordes";
+            this.Load += new System.EventHandler(this.frRecordes_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

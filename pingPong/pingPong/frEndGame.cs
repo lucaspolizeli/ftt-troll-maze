@@ -20,12 +20,9 @@ namespace pingPong
 
         private void btEnviar_Click(object sender, EventArgs e)
         {
-            var jogo = new frGame();
-            string conteudo = txtNomePlayerWin.Text + " || " + jogo.subTimes.ToString() + Environment.NewLine;
+            string conteudo = txtNomePlayerWin.Text + " || " + frGame.subTimes.ToString(@"hh\:mm\:ss") + Environment.NewLine;
             File.WriteAllText("recordes.txt", conteudo);
-
             this.Close();
-            
         }
     }
 }

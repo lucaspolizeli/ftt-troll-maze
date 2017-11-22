@@ -16,7 +16,7 @@ namespace pingPong
     {
         bool mustClose = false;
         DateTime tempoInicial;
-        public TimeSpan subTimes;
+        public static TimeSpan subTimes;
 
         public frGame()
         {
@@ -58,9 +58,13 @@ namespace pingPong
 
         public void frGame_Load(object sender, EventArgs e)
         {
-            
-            tempoInicial = DateTime.Now;
-            
+            player1.Click += Player1_Click;
+        }
+
+        private void Player1_Click(object sender, EventArgs e)
+        {
+            if (!player1.Clicked)
+                tempoInicial = DateTime.Now;
         }
     }
 }
