@@ -35,6 +35,9 @@
   <PropertyGroup>
     <StartupObject />
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\if_puzzle_216384.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -192,8 +195,7 @@
     <None Include="Resources\untitled.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\donald-trump-png-7.png" />
-    <Content Include="Resources\ico.ico" />
+    <None Include="Resources\if_puzzle_216384.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
