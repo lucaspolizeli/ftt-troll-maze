@@ -174,7 +174,7 @@
             // collisionWall87
             // 
             this.collisionWall87.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.collisionWall87.Location = new System.Drawing.Point(107, 31);
+            this.collisionWall87.Location = new System.Drawing.Point(12, 27);
             this.collisionWall87.Name = "collisionWall87";
             this.collisionWall87.Size = new System.Drawing.Size(10, 69);
             this.collisionWall87.TabIndex = 121;

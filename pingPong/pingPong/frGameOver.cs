@@ -16,18 +16,16 @@ namespace pingPong
         public frGameOver()
         {
             InitializeComponent();
-            Time.BlinkTimer.Tick += BlinkTimer_Tick;
-        }
-
-        private void BlinkTimer_Tick(object sender, EventArgs e)
-        {
-            tempo += 1500;
-            if (tempo % 4500 <= 0) this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            FindForm().Close();
         }
     }
 }
