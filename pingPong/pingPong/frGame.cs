@@ -15,6 +15,15 @@ namespace pingPong
 {
     public partial class frGame : Form
     {
+        public static bool soundEnabled = true;
+        public static void enableSound()
+        {
+            soundEnabled = true;
+        }
+        public static void disableSound()
+        {
+            soundEnabled = false;
+        }
         bool mustClose = false;
         DateTime tempoInicial;
         public static TimeSpan subTimes;
@@ -42,7 +51,7 @@ namespace pingPong
             if (mustClose) this.Close();
             if (player1.Bounds.IntersectsWith(pbCJappears.Bounds))
             {
-                playCJ();
+                if(frGame.soundEnabled) playCJ();
                 pbCJbolado.Visible = true;
             }
         }

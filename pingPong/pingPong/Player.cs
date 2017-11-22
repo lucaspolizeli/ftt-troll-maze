@@ -34,7 +34,8 @@ namespace pingPong
                     Time.InternalTimer.Stop(); Time.BlinkTimer.Stop();
                     Cursor.Show();
                     Cursor.Clip = Rectangle.Empty;
-                    johncena.Play();
+                    if(frGame.soundEnabled == true)
+                        johncena.Play();
                     frGameOver over = new frGameOver();
                     over.ShowDialog();
                     johncena.Stop();

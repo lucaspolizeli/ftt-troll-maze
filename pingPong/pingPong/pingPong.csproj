@@ -70,6 +70,12 @@
     <Compile Include="frComoJogar.Designer.cs">
       <DependentUpon>frComoJogar.cs</DependentUpon>
     </Compile>
+    <Compile Include="frConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frConfig.Designer.cs">
+      <DependentUpon>frConfig.cs</DependentUpon>
+    </Compile>
     <Compile Include="frEndGame.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frComoJogar.resx">
       <DependentUpon>frComoJogar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frConfig.resx">
+      <DependentUpon>frConfig.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frEndGame.resx">
       <DependentUpon>frEndGame.cs</DependentUpon>

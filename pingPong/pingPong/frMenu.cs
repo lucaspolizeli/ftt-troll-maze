@@ -45,5 +45,11 @@ namespace pingPong
         {
             this.Close();
         }
+
+        private void btConfig_Click(object sender, EventArgs e)
+        {
+            var config = new frConfig();
+            config.ShowDialog();
+        }
     }
 }

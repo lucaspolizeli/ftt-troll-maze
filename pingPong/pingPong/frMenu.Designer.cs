@@ -36,6 +36,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btSair = new System.Windows.Forms.Button();
+            this.btConfig = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -117,7 +118,7 @@
             this.btSair.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btSair.ForeColor = System.Drawing.SystemColors.Window;
-            this.btSair.Location = new System.Drawing.Point(9, 280);
+            this.btSair.Location = new System.Drawing.Point(9, 309);
             this.btSair.Name = "btSair";
             this.btSair.Size = new System.Drawing.Size(263, 23);
             this.btSair.TabIndex = 6;
@@ -125,12 +126,26 @@
             this.btSair.UseVisualStyleBackColor = false;
             this.btSair.Click += new System.EventHandler(this.btSair_Click);
             // 
+            // btConfig
+            // 
+            this.btConfig.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btConfig.ForeColor = System.Drawing.SystemColors.Window;
+            this.btConfig.Location = new System.Drawing.Point(9, 280);
+            this.btConfig.Name = "btConfig";
+            this.btConfig.Size = new System.Drawing.Size(263, 23);
+            this.btConfig.TabIndex = 7;
+            this.btConfig.Text = "CONFIGURAÇÕES";
+            this.btConfig.UseVisualStyleBackColor = false;
+            this.btConfig.Click += new System.EventHandler(this.btConfig_Click);
+            // 
             // frMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(284, 315);
+            this.ClientSize = new System.Drawing.Size(284, 338);
+            this.Controls.Add(this.btConfig);
             this.Controls.Add(this.btSair);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -159,5 +174,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btSair;
+        private System.Windows.Forms.Button btConfig;
     }
 }
