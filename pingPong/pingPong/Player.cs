@@ -39,7 +39,6 @@ namespace pingPong
                     over.ShowDialog();
                     johncena.Stop();
                     FindForm().Close();
-                    Console.WriteLine(wall.Name);
                     break;
                 }
             }

@@ -58,14 +58,14 @@
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 4000;
+            this.timer1.Interval = 5500;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Snap ITC", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(54, 494);
+            this.label1.Location = new System.Drawing.Point(88, 494);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(604, 63);
             this.label1.TabIndex = 3;
