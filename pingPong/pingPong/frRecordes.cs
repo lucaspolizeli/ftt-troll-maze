@@ -20,7 +20,7 @@ namespace pingPong
 
         private void frRecordes_Load(object sender, EventArgs e)
         {
-            Dictionary<String, String> recordes = new Dictionary<string, string>();
+            Dictionary<string, string> recordes = new Dictionary<string, string>();
             string[] conteudo = File.ReadAllLines("recordes.txt");
             for (int i = 0; i < conteudo.Length; i++)
             {
