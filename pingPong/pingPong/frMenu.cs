@@ -40,5 +40,10 @@ namespace pingPong
             var howto = new frComoJogar();
             howto.ShowDialog();
         }
+
+        private void btSair_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

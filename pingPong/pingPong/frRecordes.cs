@@ -46,5 +46,10 @@ namespace pingPong
             }
             else lboxRecordes.Items.Add("Até agora ninguém ganhou :)");
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

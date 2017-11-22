@@ -963,7 +963,7 @@
             // 
             this.player1.BackColor = System.Drawing.Color.Red;
             this.player1.Clicked = false;
-            this.player1.Location = new System.Drawing.Point(38, 138);
+            this.player1.Location = new System.Drawing.Point(40, 53);
             this.player1.Name = "player1";
             this.player1.Size = new System.Drawing.Size(18, 18);
             this.player1.TabIndex = 7;
