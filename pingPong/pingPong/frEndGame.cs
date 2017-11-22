@@ -21,19 +21,17 @@ namespace pingPong
         private void btEnviar_Click(object sender, EventArgs e)
         {
 
-            if(txtNomePlayerWin.Text.Length == 0)
+            if (txtNomePlayerWin.Text.Length == 0)
             {
                 MessageBox.Show("Digite um nome!");
                 return;
             }
 
-            if (File.Exists("recordes.txt"))
-            {
-                string conteudo = txtNomePlayerWin.Text + "|" + frGame.subTimes.ToString(@"hh\:mm\:ss") + Environment.NewLine;
-                File.AppendAllText("recordes.txt", conteudo);
-                this.Close();
-            }
-            
+            string conteudo = txtNomePlayerWin.Text + "|" + frGame.subTimes.ToString(@"hh\:mm\:ss") + Environment.NewLine;
+            File.AppendAllText("recordes.txt", conteudo);
+            this.Close();
+
+
         }
     }
 }
