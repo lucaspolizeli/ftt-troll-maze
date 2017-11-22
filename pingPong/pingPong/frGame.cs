@@ -30,6 +30,7 @@ namespace pingPong
             if (pbYouWin.Bounds.IntersectsWith(player1.Bounds))
             {
                 Cursor.Show();
+                Cursor.Clip = Rectangle.Empty;
                 Time.InternalTimer.Stop(); Time.BlinkTimer.Stop();
                 frEndGame end = new frEndGame();
                 DateTime tempoFinal = DateTime.Now;

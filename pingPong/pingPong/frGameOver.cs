@@ -12,7 +12,6 @@ namespace pingPong
 {
     public partial class frGameOver : Form
     {
-        int tempo = 0;
         public frGameOver()
         {
             InitializeComponent();
