@@ -13,6 +13,11 @@ namespace pingPong
 {
     public partial class frRecordes : Form
     {
+        public struct Pontuacao
+        {
+            public string Nome;
+            public string Tempo;
+        }
         public frRecordes()
         {
             InitializeComponent();
@@ -20,14 +25,20 @@ namespace pingPong
 
         private void frRecordes_Load(object sender, EventArgs e)
         {
-            Dictionary<string, string> recordes = new Dictionary<string, string>();
+            List<Pontuacao> recordes = new List<Pontuacao>();
+            List<Pontuacao> recordesOrdenados = new List<Pontuacao>();
             string[] conteudo = File.ReadAllLines("recordes.txt");
+            Pontuacao pont;
             for (int i = 0; i < conteudo.Length; i++)
             {
-                //lboxRecordes.Items.Add(conteudo[i]);
+                pont = new Pontuacao();
                 string[] dados = conteudo[i].Split('|');
-                recordes.Add(dados[1], dados[2]);
+                pont.Nome = dados[0]; pont.Tempo =  dados[1];
+                recordes.Add(pont);
             }
+            recordesOrdenados = recordes.OrderBy(Pontuacao => Pontuacao.Tempo).ToList();
+            // To pensando em limitar esse foreach, fazer virar um for que mostre só tipo, os 10 primeiros registros, é só trocar o foreach por um for que vai até 10
+            foreach(Pontuacao p in recordesOrdenados) lboxRecordes.Items.Add(p.Nome +"  -------  "+ p.Tempo);
         }
     }
 }

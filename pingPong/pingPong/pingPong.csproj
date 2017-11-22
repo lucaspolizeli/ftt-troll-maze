@@ -176,10 +176,20 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="maxresdefault.jpg" />
-    <None Include="Resources\maxresdefault1.jpg" />
     <None Include="Resources\images.jpg" />
     <None Include="Resources\maxresdefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Agaragan.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i-got-a-gun.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\john-cena-meme-original.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\untitled.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

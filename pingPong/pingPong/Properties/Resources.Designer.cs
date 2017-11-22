@@ -61,12 +61,30 @@ namespace pingPong.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream i_got_a_gun {
+            get {
+                return ResourceManager.GetStream("i_got_a_gun", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap images {
             get {
                 object obj = ResourceManager.GetObject("images", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream john_cena_meme_original {
+            get {
+                return ResourceManager.GetStream("john_cena_meme_original", resourceCulture);
             }
         }
         
@@ -83,19 +101,9 @@ namespace pingPong.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap maxresdefault1 {
+        internal static System.Drawing.Bitmap untitled {
             get {
-                object obj = ResourceManager.GetObject("maxresdefault1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap maxresdefault2 {
-            get {
-                object obj = ResourceManager.GetObject("maxresdefault2", resourceCulture);
+                object obj = ResourceManager.GetObject("untitled", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.IO;
 
 namespace pingPong
 {
@@ -39,22 +40,16 @@ namespace pingPong
                 this.Close();
             }
             if (mustClose) this.Close();
+            if (player1.Bounds.IntersectsWith(pbCJappears.Bounds))
+            {
+                playCJ();
+                pbCJbolado.Visible = true;
+            }
         }
-
-        public static void playJohnCena()
+        public static void playCJ()
         {
-            SoundPlayer johncena = new SoundPlayer(@"\src\john-cena-meme-original.wav");
-            johncena.Play();
-        }
-        private void playCJ()
-        {
-            SoundPlayer CJ = new SoundPlayer(@"\src\john-cena-meme-original.wav");
+            SoundPlayer CJ = new SoundPlayer(pingPong.Properties.Resources.i_got_a_gun);
             CJ.Play();
-        }
-
-        private void pictureBox1_MouseEnter(object sender, EventArgs e)
-        {
-            pbCJbolado.Visible = true;
         }
 
         public void frGame_Load(object sender, EventArgs e)
